@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal page</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous"
+    >
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to the admin page <span th:text="${userLogin}"></span></h1>
+    <div class="row">
+        <div class="col-lg-3">
+            <a th:href="@{/products/new}" class="btn btn-primary btn-sm mb-3">Add Products</a>
+
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
